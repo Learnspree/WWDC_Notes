@@ -27,21 +27,21 @@
     * for games: download next level when needed only
     * use asset tagging to allow on-demand resource downloads
     * see new resource-tags section in project overview in Xcode
-    * see 15:00 for working example in video
+    * see 15:00 for working example in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-104/)
   * Debugging
     * Added energy-impact debugger tool (in addition to CPU usage etc)
     * Address-sanitizer (Xcode will monitor memory usage in c/objective-c code to pre-empt intermittent errors accessing deallocated memory etc)
     * crash logs through organzier window via test-flight / app-store submitted apps
-      * see 27:00 in video
+      * see 27:00 in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-104/)
       * debug code automatically from each crash in Xcode complete with stack trace etc
   * Testing
     * XCode Server automatically runs unit tests via test bots (previously available)
-    * UI Testing is new (see 33:00 for demo)
+    * UI Testing is new (see 33:00 for demo in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-104/))
       * record/play features
       * automatcailly generate code in test via record feature
       * add your own assertions
       * works well with Xcode server for automated testing
-    * Added code coverage data (see 32:00 in video)
+    * Added code coverage data (see 32:00 in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-104/))
 
 ## New in Watch OS 2:
 * Watchkit complications
