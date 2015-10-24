@@ -16,7 +16,7 @@
 * Standardization of paramter labels across global and class methods
   * use of '_' to remove the requirement of a caller to use the external label
     * Note: External label defaults to internal label if none is specified in the method signature
-    * Note: External labels don't apply to first parameter in a method as that is implied by convention in the method name (e.g. '''displayMapForCountry(country: String)'''). This is similar to Obective-C convention.
+    * Note: External labels don't apply to first parameter in a method as that is implied by convention in the method name (e.g. 'displayMapForCountry(country: String)'). This is similar to Obective-C convention.
 
 ## Compiler:
 * Better errors and warnings at compile time
