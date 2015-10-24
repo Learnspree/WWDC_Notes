@@ -5,7 +5,7 @@
 * Protocol Extensions
 * Availability (API for checking OS support for different API functions)
 * Testability (test bundles can view internal API - broader test coverage without exposing private functionality)
-* XCode 7 migrator helps this process (XTRAC used this)
+* XCode 7 migrator helps this process 
 
 ## New in Obective-C:
 * Generics
