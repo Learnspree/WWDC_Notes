@@ -30,7 +30,7 @@
   * More details at [Natasha the Robot's Blog](http://natashatherobot.com/swift-2-pattern-matching-with-if-case/)
 
 ## Availability Checking
-* Previous versions of swift required the old Objective-C style checking for a specific available selector on a class. For example, 'if (myCocoaClass.respondsToSelector(Selector("myCocoaMethod")))'
+* Previous versions of swift required the old Objective-C style checking for a specific available selector on a class. For example, `if (myCocoaClass.respondsToSelector(Selector("myCocoaMethod")))`
 * Now you don't need to do any checking in some cases. The compiler will do all checks against your minimum supported iOS version and flag any methods used that don't comply with that.
 * Also, for specific checking of a method you can use new syntax: 
 ```
