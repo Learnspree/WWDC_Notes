@@ -49,7 +49,6 @@
 * Code is built by default in a mode where both public and private methods are accessible to unit-tests. 
 * See 14:00 in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-106/)
 * Use @testable attribute on any import statement in the test class 
-* More details in the Unit Testing talk (link TODO)
 
 ## Documentation:
 * Rich Comments - Automatic rich document generation via structured comments 
