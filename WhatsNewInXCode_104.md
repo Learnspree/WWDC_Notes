@@ -1,17 +1,17 @@
-WWDC Notes - “Whats new in XCode” video (session 104)
+# WWDC Notes - “Whats new in XCode” video (session 104)
 
-New in Swift:
-Error handling
-Protocol Extensions
-Availability (API for checking OS support for different API functions)
-Testability (test bundles can view internal API - broader test coverage without exposing private functionality)
-XCode 7 migrator helps this process (XTRAC used this)
+## New in Swift:
+* Error handling
+* Protocol Extensions
+* Availability (API for checking OS support for different API functions)
+* Testability (test bundles can view internal API - broader test coverage without exposing private functionality)
+* XCode 7 migrator helps this process (XTRAC used this)
 
-New in Obective-C:
-Generics
-Nullability annotations (handy for interaction with optionals in swift)
+## New in Obective-C:
+* Generics
+* Nullability annotations (handy for interaction with optionals in swift)
 
-New in XCode:
+## New in XCode:
 Playgrounds improvements (rich comments etc)
 Watch OS 2 support
 StackView
@@ -43,11 +43,11 @@ add your own assertions
 works well with Xcode server for automated testing
 Added code coverage data (see 32:00 in video)
 
-Watch OS 2:
-Watchkit complications
-Native watch extensions
-app and app extension both run natively on the watch
-xcode 7 has automatic upgrader (“update to recommended settings”)
-configured watch targets
-configured extension to be copied inside the watch app so it’s installed together
+## Watch OS 2:
+* Watchkit complications
+* Native watch extensions
+* app and app extension both run natively on the watch
+* xcode 7 has automatic upgrader (“update to recommended settings”)
+* configured watch targets
+* configured extension to be copied inside the watch app so it’s installed together
 
