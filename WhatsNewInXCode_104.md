@@ -43,7 +43,7 @@
       * works well with Xcode server for automated testing
     * Added code coverage data (see 32:00 in video)
 
-## Watch OS 2:
+## New in Watch OS 2:
 * Watchkit complications
 * Native watch extensions
   * app and app extension both run natively on the watch
