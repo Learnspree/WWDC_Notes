@@ -1,4 +1,4 @@
-# WWDC Notes - “Whats new in XCode” video (session 104)
+# Whats new in XCode (Session 104)
 
 ## New in Swift:
 * Error handling
