@@ -24,6 +24,23 @@
     * new "`guard`" statement introduced which allows checking for all of these "return" conditions at start of method in a single block
     * This allows the use of any optional variables after the guard statement without even the need to force-unwrap with a "`!`" operator
     * See 17:00 in the [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-106/)
+* new pattern matching in `if` statements
+  * rather than verbose `switch` statements with multiple `case` statements, we can now use the `case` pattern matching directly in an `if` statement. 
+  * See 18:35 in 
+  * More details at [Natasha the Robot's Blog](http://natashatherobot.com/swift-2-pattern-matching-with-if-case/)
+
+## Availability Checking
+* Previous versions of swift required the old Objective-C style checking for a specific available selector on a class. For example, 'if (myCocoaClass.respondsToSelector(Selector("myCocoaMethod")))'
+* Now you don't need to do any checking in some cases. The compiler will do all checks against your minimum supported iOS version and flag any methods used that don't comply with that.
+* Also, for specific checking of a method you can use new syntax: 
+     '''
+     if #available(iOS 9, *) {
+       // use UIStackView
+     } else {
+       // show sad face emoji
+     }
+     '''
+* See [Hacking with Swift Blog](https://www.hackingwithswift.com/new-syntax-swift-2-availability-checking)
 
 ## Compiler:
 * Better errors and warnings at compile time
