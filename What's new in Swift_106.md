@@ -45,10 +45,26 @@
 ## Compiler:
 * Better errors and warnings at compile time
 
+## Protocol Extensions:
+* Previous to Swift 2.0, we could only extend classes, not protocols
+* Protocol extensions introduced in 2.0
+* For example, we could add functionality to the `CollectionType` protocol rather than specifically just to the `Array` class
+* This has allowed the Swift team at Apple to be able to add functionality to existing base SDK protocols without breaking existing code written in Swift 1.x
+* Excellent separate talk on [Protocol Oriented Programming](https://developer.apple.com/videos/play/wwdc2015-408/)
+ 
+## Error Handling:
+* Introducing Java/C# style error-handling concepts along the lines of try/catch/finally constructs but with a different approach
+  * `defer {...}` block introduced to act as a finally block would in Java. Guarantees execution of contained code at end of scope
+  * `do/catch` construct added which is analagous to `try/catch` block in Java/C#
+  * 
+* Previously, error handling was NSError return code based. However there are pitfalls to this approach, including forcing all callers to cater for and understand particular error codes returned from a class/method they are calling.
+* Good reasoning on the drawbacks of the old NSError approach and Java-style error-throwing at 29:00 in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-106/)
+
 ## Testing: 
 * Code is built by default in a mode where both public and private methods are accessible to unit-tests. 
 * See 14:00 in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-106/)
 * Use @testable attribute on any import statement in the test class 
+
 
 ## Documentation:
 * Rich Comments - Automatic rich document generation via structured comments 
