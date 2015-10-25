@@ -53,17 +53,31 @@
 * Excellent separate talk on [Protocol Oriented Programming](https://developer.apple.com/videos/play/wwdc2015-408/)
  
 ## Error Handling:
-* Introducing Java/C# style error-handling concepts along the lines of try/catch/finally constructs but with a different approach
-  * `defer {...}` block introduced to act as a finally block would in Java. Guarantees execution of contained code at end of scope
-  * `do/catch` construct added which is analagous to `try/catch` block in Java/C#
-  * 
 * Previously, error handling was NSError return code based. However there are pitfalls to this approach, including forcing all callers to cater for and understand particular error codes returned from a class/method they are calling.
 * Good reasoning on the drawbacks of the old NSError approach and Java-style error-throwing at 29:00 in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-106/)
+* Recommended to continue to use optional unwrapping (e.g. `myObject?.myProperty?.value`) for simple operations like type conversions, numeric conversions etc.
+* However optionals are not sufficient to cover unexpected runtime issues such as Assertions, NSExceptions, Array-out-of-bounds issues
+* Introducing Java/C# style error-handling concepts along the lines of `try/catch/finally` constructs but with a different approach
+  * `defer {...}` block introduced to act as a finally block would in Java. Guarantees execution of contained code at end of scope
+  * `do/catch` construct added which is analagous to `try/catch` block in Java/C#
+  * errors in swift are represented by values of types that conform to the empty `ErrorType` protocol. Enum types are useful for defining groups of related errors - for example: 
+  ```
+  enum ConnectionError: ErrorType {
+    case NoNetwork
+    case SlowConnection(speedInMB: Int)
+    case InvalidConnectionPermission
+  }
+  ```
+  * `throws` keyword added to method declaration to indicate it throws errors out the caller rather than handling them itself
+  * `throw` keyword used to throw a specific error from your code. For example:
+  ```
+  throw ConnectionError.SlowConnection(speedInMB: 0.5)
+  ```
 
 ## Testing: 
 * Code is built by default in a mode where both public and private methods are accessible to unit-tests. 
 * See 14:00 in [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-106/)
-* Use @testable attribute on any import statement in the test class 
+* Use `@testable` attribute on any import statement in the test class 
 
 
 ## Documentation:
