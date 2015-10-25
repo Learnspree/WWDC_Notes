@@ -70,9 +70,13 @@
   ```
   * `throws` keyword added to method declaration to indicate it throws errors out the caller rather than handling them itself
   * `throw` keyword used to throw a specific error from your code. For example:
-  ```
-  throw ConnectionError.SlowConnection(speedInMB: 0.5)
-  ```
+  `throw ConnectionError.SlowConnection(speedInMB: 0.5)`
+  * `try/try?/try!` keywords are used to invoke a method that can throw an error
+    * `try` is used to invoke the method and the caller must either handle potential errors in a `catch` block or by using `throws` to propagate out to it's own caller
+    * `try?` is used to transform any error thrown into a nil return value
+    * `try!` is used to force-unwrap the return value in the assumed knowledge that we know NO error can be thrown
+    * `catch` block can use pattern matching to match multiple errors
+    * `catch` blocks can be chained as in Java or .NET
 
 ## Testing: 
 * Code is built by default in a mode where both public and private methods are accessible to unit-tests. 
