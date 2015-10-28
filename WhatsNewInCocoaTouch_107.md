@@ -14,3 +14,4 @@
 * Stack View allows nesting of multiple stack views within
 * A layout feature that's been in Android for some time and now finally in iOS
 * Recommended for use going forward as much as possible
+* Note: Early adoption will be difficult as it requires a minimum deployment target of iOS 9.0. Only for apps supporting that version of iOS and higher.
