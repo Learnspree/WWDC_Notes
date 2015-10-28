@@ -21,6 +21,13 @@
   * New classes added to allow developers to create individual keyboard customization buttons in the keyboard shortcut bar
   * See 8:00 at [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-107/)
 * Right-to-left view support for right-to-left languages/cultures
-* 
+* Various UIKit enhancements including for animations
+* Touch Events 
+  * Up to now there is an inherent and unavoidable certain latency in touch actions by the user and the event being triggered
+  * Apple claim this is industry leading latency even before iOS 9
+  * New events will be fired in iOS 9 which use a complex new engine to "predict" the upcoming events based on the users' gestures
+  * A good example of this features at about 15:10 in the [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-107/)
+* Notifications now accept text input
+  * For example allow responding to text message directly within the notification
 
 
