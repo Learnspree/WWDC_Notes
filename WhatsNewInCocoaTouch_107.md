@@ -29,5 +29,27 @@
   * A good example of this features at about 15:10 in the [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-107/)
 * Notifications now accept text input
   * For example allow responding to text message directly within the notification
+* SFSafariViewController - new
+  * Display webcontext but with usual Safari buttons/toolbars/functionality
+  * Not simply a UIWebView replacement
+    * UIWebView is just an empty frame to be contained in your view
+* Safari enhancements
+  * Content blocking allows blocking of certain types of content on any page rendered in Safari
+  * This has serious implications for web-page based advertising
+  * Potentially allows Apple more control over web advertising on iOS platform 
+* Document based applications
+  * See specific talk on [Building Document Based Applications](https://developer.apple.com/videos/play/wwdc2015-234/)
+* New Contacts-API for interacting with contacts on the phone 
+  * See separate talk on [Contacts API](https://developer.apple.com/videos/play/wwdc2015-223/)
+* Wallet / Passkit enhancements
+* Core Location
+  * Changes in background location tracking
+  * Added new one-time location request for when only occasional location tracking is needed
+    * New `requestionLocation` API
+* Various enhancements to:
+  * HealthKit
+  * HomeKit
+  * CloudKit
+  * GameplayKit
 
 
