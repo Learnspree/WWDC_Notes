@@ -15,3 +15,12 @@
 * A layout feature that's been in Android for some time and now finally in iOS
 * Recommended for use going forward as much as possible
 * Note: Early adoption will be difficult as it requires a minimum deployment target of iOS 9.0. Only for apps supporting that version of iOS and higher.
+
+## Other UI Enhancements
+* Customizable Keyboard Shortcut Bar
+  * New classes added to allow developers to create individual keyboard customization buttons in the keyboard shortcut bar
+  * See 8:00 at [WWDC Video](https://developer.apple.com/videos/play/wwdc2015-107/)
+* Right-to-left view support for right-to-left languages/cultures
+* 
+
+
