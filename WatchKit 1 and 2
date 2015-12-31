@@ -1,0 +1,11 @@
+Architecture
+* 3 Main components:
+  * iOS Application
+  * WatchOS Watch Application
+    * Resources and Interface definition
+  * WatchOS WatchKit Extension
+    * Watch Application (Code)
+    * Additional Resources
+
+  
+  
