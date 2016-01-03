@@ -1,4 +1,5 @@
 Architecture
+* Very controlled environment - each application component (App, Glance, Notification, Compliation) has base class and is very structured
 * 3 Main components:
   * iOS Application
   * WatchOS Watch Application
@@ -11,7 +12,12 @@ Architecture
   * Glance
   * notification
   * Complication - see separate session on complications (link TODO)
-* 
+* Resources need to be in the right place for the right purpose - e.g. images in application bundle can be used to link to interface outlets but those in extension bundle cannot - but can be accessed via code.
+* Data Storage Folders
+  * Document Directory - more permanent
+  * Cache Directory - temporary storage
+* Media
+  * 
 
   
   
