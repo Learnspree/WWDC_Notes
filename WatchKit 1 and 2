@@ -25,7 +25,11 @@ Architecture
     * Download direct from remote server etc (http & https)
     * Background downloads possible (e.g. when watch screen turned off)
     * Once file is downloaded, it's in temporary cache so need to access immediately before purge
-  
+  * WatchKit Connectivity Framework
+    * Share data
+    * Transfer files 
+    * See session "Introducing Watch Connectivity" (link TODO)
+    
 
   
   
