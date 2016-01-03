@@ -1,4 +1,4 @@
-Architecture
+* See session on Building Watch Apps (link TODO)
 * Very controlled environment - each application component (App, Glance, Notification, Compliation) has base class and is very structured
 * 3 Main components:
   * iOS Application
