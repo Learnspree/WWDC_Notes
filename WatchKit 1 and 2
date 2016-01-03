@@ -33,7 +33,7 @@
    * WKExtensionDelegate similar function to UIApplicationDeleagate
      * applicationWDidFinishLaunching / applicationDidBecomeActive / applicationWillResignActive 
      * All these apply to the aplication, not the glance, notification UI
-     * Events to handle launching of the app from a complication
+     * Events to handle launching of the app from a complication (handleUserActivity)
 
   
   
