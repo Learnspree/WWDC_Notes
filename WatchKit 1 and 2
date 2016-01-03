@@ -6,6 +6,12 @@ Architecture
   * WatchOS WatchKit Extension
     * Watch Application (Code)
     * Additional Resources
+* 4 roles in watchkit architecture
+  * Application
+  * Glance
+  * notification
+  * Complication
+* 
 
   
   
