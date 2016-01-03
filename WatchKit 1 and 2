@@ -34,6 +34,15 @@
      * applicationWDidFinishLaunching / applicationDidBecomeActive / applicationWillResignActive 
      * All these apply to the aplication, not the glance, notification UI
      * Events to handle launching of the app from a complication (handleUserActivity)
-
+* WKExtension <==> UIApplication 
+  * interaction with system abilities such as phone / sms
+* Remote Notifications
+  * Go to phone first, which decides whether it should go to the watch
+    * Depends on whether phone is unlocked, screen on etc
+  * Either didReceiveRemoteNotification or didReceiveLocalNotification and can decide what do do from there in your app
+* Local Notifications
+  * Can be send in either direction (between phone and watch)
+  * Watch->Phone treated as remote notification
+  
   
   
